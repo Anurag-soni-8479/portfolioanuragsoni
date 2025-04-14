@@ -125,3 +125,25 @@ arrowLeft.addEventListener('click', () => {
     }
     activePortfolio();
 });
+
+
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+  
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+  
+    const response = await fetch("https://portfolio-backend-y7ua.onrender.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fullName, email, phone, subject, message }),
+    });
+  
+    const data = await response.json();
+    alert(data.message);
+  });

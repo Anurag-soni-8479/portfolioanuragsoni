@@ -442,16 +442,17 @@
 
 
             <div class="contact-box">
-                <form action="">
+                <form action="http://localhost:3000/sendemail" method="post" id="contactForm">
                     <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
-                        <input type="text" placeholder="full name" required>
-                        <input type="text" placeholder="Email Address" required>
-                        <input type="text" placeholder="Phone Number" required>
-                        <input type="text" placeholder="Email subject" required>
-                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                        <input id="fullName" type="text" name="fullName" placeholder="Joy Bob" required>
+                        <input id="email" type="email" name="email" placeholder="joybob@gmail.com" required>
+                        <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
+                        <input id="subject" type="text" name="subject" placeholder="Email subject" required>
+                        <textarea id="message" name="message" id="" placeholder="Your Message" required></textarea>
                     </div>
-                    <butten type="submit" class="btn">send Message</butten>
+                    <!-- <buttn type="submit" class="btn">send Message</butten> -->
+                    <button type="submit" class="btn">Send me your Message</button>
 
 
                 </form>
@@ -460,6 +461,7 @@
     </section>
 
     <!--custom.js-->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="script.js"></script>
 
 </body>
