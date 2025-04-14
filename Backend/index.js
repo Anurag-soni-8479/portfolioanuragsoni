@@ -10,6 +10,7 @@ const port = process.env.PORT
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.send('hello world');
