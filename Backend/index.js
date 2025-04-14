@@ -12,8 +12,8 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 
 app.use(cors({
-    origin: 'https://anurag-soni-8479.github.io',
-    methods: ['POST', 'GET'],
+    origin: 'https://anurag-soni-8479.github.io/portfolioanuragsoni',
+    methods: ['GET', 'POST', 'OPTIONS'],
     credentials: false
 }));
 
