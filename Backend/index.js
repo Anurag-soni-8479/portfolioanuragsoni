@@ -10,7 +10,12 @@ const port = process.env.PORT
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
-app.use(cors())
+
+app.use(cors({
+    origin: 'https://anurag-soni-8479.github.io',
+    methods: ['POST', 'GET'],
+    credentials: false
+}));
 
 app.get('/', (req, res) => {
     res.send('hello world');
