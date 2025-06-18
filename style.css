@@ -258,7 +258,7 @@ section.active {
 
 .home-img {
     margin-left: 10rem;
-    ;
+    
 }
 
 .home-img .img-box {
@@ -964,4 +964,23 @@ section.active {
         font-size: 3.5rem;
     }
 
+}
+
+
+
+@media (max-width:600px) {
+    .home-img {
+    margin-left: 1rem;
+    }
+
+    .btn-sci .sci {
+    margin-left: 100px;
+    margin-top: 15px;
+   }
+
+   .btn-sci {
+    margin-left: 5px;
+   }
+
+    
 }
