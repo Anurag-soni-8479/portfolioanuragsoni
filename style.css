@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     font-family: "Poppins", sans-serif;
-    overscroll-behavior: none;
+    /* overscroll-behavior: none; */
 }
 
 :root {
